@@ -1,0 +1,72 @@
+{
+  "id": "72fd6464-e0f9-4314-86b4-242eecd6d7f5",
+  "name": "NYC Taxi Data Quality Project",
+  "description": "My project description",
+  "dashboard": {
+    "name": "NYC Taxi Data Quality Project",
+    "panels": [
+      {
+        "type": "evidently.ui.dashboards.reports.DashboardPanelCounter",
+        "id": "8bff2d78-c1c0-47a1-92a3-d70e9f0f6c2b",
+        "title": "NYC taxi data dashboard",
+        "filter": {
+          "metadata_values": {},
+          "tag_values": [],
+          "include_test_suites": false
+        },
+        "size": 2,
+        "agg": "none",
+        "value": null,
+        "text": null
+      },
+      {
+        "type": "evidently.ui.dashboards.reports.DashboardPanelPlot",
+        "id": "efbd90b6-1841-4d06-b802-4002d2ec5615",
+        "title": "Inference Count",
+        "filter": {
+          "metadata_values": {},
+          "tag_values": [],
+          "include_test_suites": false
+        },
+        "size": 1,
+        "values": [
+          {
+            "field_path": "current.number_of_rows",
+            "metric_id": "DatasetSummaryMetric",
+            "metric_fingerprint": null,
+            "metric_args": {},
+            "legend": "count"
+          }
+        ],
+        "plot_type": "bar"
+      },
+      {
+        "type": "evidently.ui.dashboards.reports.DashboardPanelPlot",
+        "id": "0ea099e7-a2f7-4712-9252-af5d9c174a8a",
+        "title": "Number of Missing Values",
+        "filter": {
+          "metadata_values": {},
+          "tag_values": [],
+          "include_test_suites": false
+        },
+        "size": 1,
+        "values": [
+          {
+            "field_path": "current.number_of_missing_values",
+            "metric_id": "DatasetSummaryMetric",
+            "metric_fingerprint": null,
+            "metric_args": {},
+            "legend": "count"
+          }
+        ],
+        "plot_type": "line"
+      }
+    ],
+    "tabs": [],
+    "tab_id_to_panel_ids": {}
+  },
+  "team_id": null,
+  "date_from": null,
+  "date_to": null,
+  "created_at": "2024-07-02T07:47:24.304020"
+}
